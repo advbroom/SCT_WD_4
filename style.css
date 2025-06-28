@@ -1,0 +1,162 @@
+body.dark-theme {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffd0;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.task-panel {
+  flex: 2;
+  min-width: 350px;
+}
+
+.calendar-panel {
+  flex: 1;
+  min-width: 280px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.task-form {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #262626;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-form button {
+  background-color: #00cc99;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #00ffbf;
+}
+
+.task-list-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list-section li {
+  background-color: #262626;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #00ccff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.task-list-section li:hover {
+  background-color: #333333;
+  transform: scale(1.01);
+}
+
+.task-list-section li.completed {
+  border-left: 5px solid #00ff99;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-controls button:nth-child(1) {
+  background-color: #00cc66;
+}
+
+.task-controls button:nth-child(2) {
+  background-color: #ffaa00;
+}
+
+.task-controls button:nth-child(3) {
+  background-color: #ff4444;
+}
+
+#calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.calendar-date {
+  padding: 10px;
+  background-color: #262626;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calendar-date:hover {
+  background-color: #00cc99;
+  color: black;
+}
+
+.calendar-date.active {
+  background-color: #00cc99;
+  color: black;
+  font-weight: bold;
+}
+
+.calendar-date.task-day {
+  border-left: 4px solid #00ccff;
+}
+
+.selected-date-tasks {
+  margin-top: 20px;
+}
+
+.selected-date-tasks ul {
+  list-style: none;
+  padding: 0;
+}

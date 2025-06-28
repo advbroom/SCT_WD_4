@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <div class="app-container">
+    <h1>📝 To-Do List Work</h1>
+
+    <div class="main-content">
+      <!-- LEFT SIDE -->
+      <div class="task-panel">
+        <div class="task-form">
+          <h2>Create New Task</h2>
+          <input type="text" id="task-title" placeholder="Task title..." />
+          <textarea id="task-note" placeholder="Note..."></textarea>
+          <input type="datetime-local" id="task-datetime" />
+          <button id="add-btn">➕ Save Task</button>
+        </div>
+
+        <div class="task-list-section">
+          <h2>🗃️ All Tasks</h2>
+          <ul id="task-list"></ul>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="calendar-panel">
+        <h2>📅 Calendar</h2>
+        <div id="calendar-dates"></div>
+        <div class="selected-date-tasks">
+          <h3>📌 Tasks on <span id="selected-date-label">None</span></h3>
+          <ul id="selected-date-task-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
